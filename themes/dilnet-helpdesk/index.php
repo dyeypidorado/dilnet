@@ -65,9 +65,10 @@
 
 			    <?php endif; ?>
 
-		    </div>
-		    <?php get_sidebar(); ?>
 -->
+		    </div>
+		    <?php // get_sidebar(); ?>
+
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
