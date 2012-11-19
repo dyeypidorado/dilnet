@@ -6,8 +6,9 @@
 
         <?php do_shortcode( '[responsive_slider]' ); ?>
 
-		    <div id="main" class="eightcol first clearfix" role="main">
 <!--
+		    <div id="main" class="eightcol first clearfix" role="main">
+
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
@@ -65,8 +66,24 @@
 
 			    <?php endif; ?>
 
--->
+
 		    </div>
+-->
+
+		    <div id="main" class="fourcol first clearfix">
+		    	<h2>Section</h2>
+		    </div>
+
+
+		    <div id="main" class="fourcol clearfix">
+		    	<h2>Section</h2>
+		    </div>
+
+
+		    <div id="main" class="fourcol last clearfix">
+		    	<h2>Section</h2>
+		    </div>
+
 		    <?php // get_sidebar(); ?>
 
 		</div> <!-- end #inner-content -->
