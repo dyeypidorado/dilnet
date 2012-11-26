@@ -7,8 +7,6 @@
         <?php do_shortcode( '[responsive_slider]' ); ?>
 
 <!--
-		    <div id="main" class="eightcol first clearfix" role="main">
-
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
@@ -66,22 +64,32 @@
 
 			    <?php endif; ?>
 
-
-		    </div>
 -->
 
 		    <div id="main" class="fourcol first clearfix">
-		    	<h2>Section</h2>
+		    	<h2>Announcements</h2>
+		    	<?php if (function_exists (news_announcement)) news_announcement(); ?>
 		    </div>
-
 
 		    <div id="main" class="fourcol clearfix">
-		    	<h2>Section</h2>
+		    	<h2>Contact Us</h2>
+				    Address: Magsaysay Ave. Cor. Apacible St., 
+				    University of the Philippines, Diliman, Quezon City<br/>
+				    <hr>
+				    <ul class="contact-page">
+							<li id="phone">(02) 981-8500 | Local 2050 </li>
+							<li id="mail">helpdesk@upd.edu.ph </li>
+						</ul>
+				    <hr>
+				    Office Hours: Mondays to Fridays, 8:00AM - 5:30PM
 		    </div>
-
-
-		    <div id="main" class="fourcol last clearfix">
-		    	<h2>Section</h2>
+		    
+		    <div id="main" class="fourcol clearfix last">
+		    	<h2>Links</h2>
+					University of the Philippines System<br/>
+					University of the Philippines Diliman<br>
+					University Computer Center<br>
+					FOSS <br/>
 		    </div>
 
 		    <?php // get_sidebar(); ?>

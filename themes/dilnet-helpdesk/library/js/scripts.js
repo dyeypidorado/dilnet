@@ -67,11 +67,10 @@ jQuery(document).ready(function($) {
 
     }
 
-
-	// add all your scripts here
-	$("button#nav_hide").click(function(){
-    $("ul#menu-nav").slideToggle('slow');
-  });
+    // add all your scripts here
+    $("button#nav_hide").click(function(){
+        $("nav").slideToggle("slow");
+    });
 
 }); /* end of as page load scripts */
 

@@ -457,8 +457,7 @@ small, .small {
   font-size: 75%; }
 
 ul, ol {
-  padding: 0;
-  list-style-type: none; }
+  padding: 0; }
 
 dd {
   margin: 0; }
@@ -719,7 +718,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: Georgia, serif;
+  font-family: sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #565656; }
@@ -792,7 +791,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -927,6 +926,8 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
+  .entry-content ul, .entry-content ol {
+    padding-left: 2em; }
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -1169,11 +1170,11 @@ SIDEBARS & ASIDES
   /* deep nesting */ }
 .widget .blogroll {
   list-style: url(../images/bbullet.png) outside; }
-.widget .contact {
+.widget .contact-sidebar {
   margin-left: 15px; }
-  .widget .contact #phone {
+  .widget .contact-sidebar #phone {
     list-style: url(../images/phone-icon.png) outside; }
-  .widget .contact #mail {
+  .widget .contact-sidebar #mail {
     list-style: url(../images/msg-icon.png) outside; }
 
 /*********************
@@ -1195,6 +1196,16 @@ view.
 /* end .footer-links */
 .copyright {
   color: white; }
+
+/*********************
+	LIST STYLES FOR CONTACT SECTIONS
+*********************/
+.contact-page {
+  margin-left: 3em; }
+  .contact-page #phone {
+    list-style: url(../images/phone-icon.png) outside; }
+  .contact-page #mail {
+    list-style: url(../images/msg-icon.png) outside; }
 
 /*
 LARGER MOBILE DEVICES
