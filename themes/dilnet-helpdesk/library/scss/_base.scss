@@ -323,6 +323,7 @@ POSTS & CONTENT STYLES
 			ul, ol, table, dl {}
 
 			ul, ol {
+				padding-left: 2em;
 
 				li {}
 
@@ -839,7 +840,7 @@ SIDEBARS & ASIDES
 	  .blogroll{
 	    list-style: url(../images/bbullet.png) outside;
 	  }
-    .contact{
+    .contact-sidebar{
       margin-left: 15px;
       #phone{
         list-style: url(../images/phone-icon.png) outside;
@@ -884,3 +885,19 @@ FOOTER STYLES
 	.copyright {
 	  color: white;
 	}
+
+/*********************
+	LIST STYLES FOR CONTACT SECTIONS
+*********************/
+.contact-page{
+  margin-left: 3em;
+  #phone{
+    list-style: url(../images/phone-icon.png) outside;
+  }
+
+  #mail{
+    list-style: url(../images/msg-icon.png) outside;
+  }
+}
+
+  
