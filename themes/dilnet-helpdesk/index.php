@@ -86,11 +86,22 @@
 
 		    <div id="main" class="fourcol clearfix last">
 		    	<h2>Links</h2>
-					University of the Philippines System<br/>
-					University of the Philippines Diliman<br>
-					University Computer Center<br>
-					FOSS <br/>
+						<a href="http://up.edu.ph">University of the Philippines System</a><br/>
+						<a href="http://upd.edu.ph">University of the Philippines Diliman</a><br>
+						<a href="http://ucc.upd.edu.ph">University Computer Center</a><br>
+						<a href="#">FOSS</a><br/>
+					<h2>Connect with Us</h2>
+						<a href="#" rel="nofollow">
+					  	<img src="<?php echo get_template_directory_uri(); ?>/library/images/f_logo.png">
+					  	Like us on Facebook
+					  </a>
+					  <a href="#" rel="nofollow">
+					  	<img src="<?php echo get_template_directory_uri(); ?>/library/images/twitter-bird-white-on-blue.png">
+					  	Follow @dilnet
+					  </a>
+					  
 		    </div>
+
 
 		    <?php // get_sidebar(); ?>
 
