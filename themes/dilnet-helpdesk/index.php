@@ -6,72 +6,12 @@
 
         <?php do_shortcode( '[responsive_slider]' ); ?>
 
-<!--
-			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-			    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-
-				    <header class="article-header">
-
-					    <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-
-					    <p class="byline vcard"><?php _e('Posted', 'bonestheme'); ?> <time class="updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time>
-						    <?php _e('by', 'bonestheme'); ?> <span class="author"><?php the_author_posts_link(); ?></span> <span class="amp">&</span> <?php _e('filed under', 'bonestheme'); ?> <?php the_category(', '); ?>
-						  </p>
-
-				    </header>
-
-				    <section class="entry-content clearfix">
-					    <?php the_content(); ?>
-				    </section>
-
-				    <footer class="article-footer">
-
-							<p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p>
-
-				    </footer>
-
-				    <?php // comments_template(); // uncomment if you want to use them ?>
-
-			    </article>
-
-			    <?php endwhile; ?>
-
-			        <?php if (function_exists('bones_page_navi')) { ?>
-			            <?php bones_page_navi(); ?>
-			        <?php } else { ?>
-			            <nav class="wp-prev-next">
-			                <ul class="clearfix">
-			        	        <li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-			        	        <li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
-			                </ul>
-			            </nav>
-			        <?php } ?>
-
-			    <?php else : ?>
-
-			        <article id="post-not-found" class="hentry clearfix">
-			            <header class="article-header">
-			        	    <h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-			        	</header>
-			            <section class="entry-content">
-			        	    <p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-			        	</section>
-			        	<footer class="article-footer">
-			        	    <p><?php _e("This is the error message in the index.php template.", "bonestheme"); ?></p>
-			        	</footer>
-			        </article>
-
-			    <?php endif; ?>
-
--->
-
-		    <div id="main" class="fourcol first clearfix">
+		    <div class="fourcol first homepage-sections clearfix">
 		    	<h2>Announcements</h2>
-		    	<?php if (function_exists (news_announcement)) news_announcement(); ?>
+	    		<?php if (function_exists (news_announcement)) news_announcement(); ?>
 		    </div>
 		    
-		    <div id="main" class="fourcol clearfix">
+		    <div class="fourcol homepage-sections clearfix">
 		    	<h2>Contact Us</h2>
 				    <strong>Address:</strong> Magsaysay Ave. Cor. Apacible St., 
 				    University of the Philippines, Diliman, Quezon City<br/>
@@ -84,20 +24,18 @@
 				    <strong>Office Hours:</strong> Mondays to Fridays, 8:00AM - 5:30PM
 		    </div>
 
-		    <div id="main" class="fourcol clearfix last">
+		    <div class="fourcol homepage-sections clearfix last">
 		    	<h2>Links</h2>
-						<a href="http://up.edu.ph">University of the Philippines System</a><br/>
-						<a href="http://upd.edu.ph">University of the Philippines Diliman</a><br>
-						<a href="http://ucc.upd.edu.ph">University Computer Center</a><br>
-						<a href="#">FOSS</a><br/>
+						<a href="http://up.edu.ph">University of the Philippines System</a>
+						<a href="http://upd.edu.ph">University of the Philippines Diliman</a>
+						<a href="http://ucc.upd.edu.ph">University Computer Center</a>
+						<a href="#">FOSS</a>
 					<h2>Connect with Us</h2>
-						<a href="#" rel="nofollow">
+						<a id="fb-link" href="https://www.facebook.com/updilnet">
 					  	<img src="<?php echo get_template_directory_uri(); ?>/library/images/f_logo.png">
-					  	Like us on Facebook
 					  </a>
-					  <a href="#" rel="nofollow">
+					  <a id="twit-link" href="https://twitter.com/dilnet">
 					  	<img src="<?php echo get_template_directory_uri(); ?>/library/images/twitter-bird-white-on-blue.png">
-					  	Follow @dilnet
 					  </a>
 					  
 		    </div>

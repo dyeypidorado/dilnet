@@ -1198,14 +1198,23 @@ view.
   color: white; }
 
 /*********************
-	LIST STYLES FOR CONTACT SECTIONS
+	LIST STYLES FOR HOMEPAGE SECTIONS
 *********************/
-.contact-page {
-  margin-left: 3em; }
-  .contact-page #phone {
+.homepage-sections .contact-page {
+  margin-left: 2.5em; }
+  .homepage-sections .contact-page #phone {
     list-style: url(../images/phone-icon.png) outside; }
-  .contact-page #mail {
+  .homepage-sections .contact-page #mail {
     list-style: url(../images/msg-icon.png) outside; }
+.homepage-sections a {
+  margin-right: 2em;
+  text-decoration: none; }
+  .homepage-sections a:hover {
+    text-decoration: underline; }
+  .homepage-sections a img {
+    max-height: 10%; }
+.homepage-sections #twit-link, .homepage-sections #fb-link {
+  text-decoration: none; }
 
 /*
 LARGER MOBILE DEVICES

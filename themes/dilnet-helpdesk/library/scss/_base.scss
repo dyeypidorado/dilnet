@@ -887,17 +887,35 @@ FOOTER STYLES
 	}
 
 /*********************
-	LIST STYLES FOR CONTACT SECTIONS
+	LIST STYLES FOR HOMEPAGE SECTIONS
 *********************/
-.contact-page{
-  margin-left: 3em;
-  #phone{
-    list-style: url(../images/phone-icon.png) outside;
-  }
+.homepage-sections{
+	.contact-page{
+	  margin-left: 2.5em;
+	  #phone{
+	    list-style: url(../images/phone-icon.png) outside;
+	  }
 
-  #mail{
-    list-style: url(../images/msg-icon.png) outside;
-  }
+	  #mail{
+	    list-style: url(../images/msg-icon.png) outside;
+	  }
+	}
+	
+	a{
+		margin-right: 2em;
+		text-decoration:none;
+		&:hover {
+			text-decoration: underline;
+		}
+		img{
+  		max-height: 10%;
+		}
+	}
+	
+	#twit-link, #fb-link{
+		text-decoration: none;
+	}
 }
+
 
   
