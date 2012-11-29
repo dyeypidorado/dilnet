@@ -1212,7 +1212,7 @@ view.
   .homepage-sections a:hover {
     text-decoration: underline; }
   .homepage-sections a img {
-    max-height: 10%; }
+    max-height: 5%; }
 .homepage-sections #twit-link, .homepage-sections #fb-link {
   text-decoration: none; }
 
