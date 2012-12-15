@@ -162,15 +162,15 @@ HEADER SYTLES
   }
 
 }
-  #banner {
-    background: url(../images/grad.png) repeat-x center;
-  }
+#banner {
+  background: url(../images/grad.png) repeat-x center;
+}
 
-	#logo {
-	  img{
-	    max-width: 90%;
-	  }
-	}
+#logo {
+  img{
+    max-width: 90%;
+  }
+}
 
 /*********************
 NAVIGATION STYLES
@@ -901,19 +901,18 @@ FOOTER STYLES
 	  }
 	}
 	
-	a{
-		margin-right: 2em;
-		text-decoration:none;
-		&:hover {
-			text-decoration: underline;
-		}
-		img{
-  		max-height: 5%;
-		}
-	}
-	
 	#twit-link, #fb-link{
-		text-decoration: none;
+		a{
+			margin-right: 2em;
+			text-decoration:none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		img{
+	  	max-width: 70%;
+		}
 	}
 }
 
